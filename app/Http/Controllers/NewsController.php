@@ -134,14 +134,14 @@ class NewsController extends Controller
                 $news->delete();
                 return response()->json([
                     'status'  => 'success',
-                    'message' => 'Produto deletado com sucesso.',
+                    'message' => 'Notícia deletada com sucesso.',
                     'reload'  => true,
                 ]);
             }
             else{
                 return response()->json([
                     'status'  => 'error',
-                    'message' => 'Produto não encontrado.',
+                    'message' => 'Notícia não encontrada.',
                     'reload'  => true,
                 ]);
             }
@@ -174,4 +174,3 @@ class NewsController extends Controller
         ]);
      }
 }
-
