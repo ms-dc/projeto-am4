@@ -69,8 +69,8 @@
 @endsection
 
 @push('scripts')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="application/javascript">
     $('.deleteButton').on('click', function (e) {
     var url = $(this).data('url');
     var idNew = $(this).data('idNew');
@@ -99,7 +99,7 @@
     });
 });
 </script>
-<script>
+<script type="application/javascript">
     $(document).ready(function(){
 	$(window).scroll(function () {
 			if ($(this).scrollTop() > 50) {
