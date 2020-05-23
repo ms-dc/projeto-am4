@@ -3,7 +3,7 @@
 @push('styles')
 @endpush
 
-@section('title', 'Gestão de Produtos')
+@section('title', 'Gestão de Notícias')
 
 @section('content')
 
@@ -69,36 +69,35 @@
 @endsection
 
 @push('scripts')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
     $('.deleteButton').on('click', function (e) {
-        var url = $(this).data('url');
-        var idNew = $(this).data('idNew');
-	    $.ajaxSetup({
-            headers: {'X-CSRF-TOKEN': '{{ csrf_token() }}'},
-            method: 'DELETE',
-            url: url
-        });
-        $.ajax({
-            data: {
-                'idNew': idNew,
-            },
-            success: function (data) {
-                console.log(data);
-                if (data['status'] ?? '' == 'success') {
-                    if (data['reload'] ?? '') {
-                        location.reload();
-                    }
-                } else {
-                   console.log('error');
-                }
-            },
-            error: function (data) {
-                console.log(data);
-            }
-        });
+    var url = $(this).data('url');
+    var idNew = $(this).data('idNew');
+    $.ajaxSetup({
+        headers: {'X-CSRF-TOKEN': '{{ csrf_token() }}'},
+        method: 'DELETE',
+        url: url
     });
-
+    $.ajax({
+        data: {
+            'idNew': idNew,
+        },
+        success: function (data) {
+            console.log(data);
+            if (data['status'] ?? '' == 'success') {
+                if (data['reload'] ?? '') {
+                    location.reload();
+                }
+            } else {
+                console.log('error');
+            }
+        },
+        error: function (data) {
+            console.log(data);
+        }
+    });
+});
 </script>
 <script>
     $(document).ready(function(){
