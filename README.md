@@ -13,3 +13,4 @@
     <li>Executar o comando <em>php artisan migrate</em> para migrar a base de dados.</li>
     <li>Executar o comando <em>php artisan db:seed</em> para popular as tabelas do banco de dados.</li>
 </ol>
+<p> Login -> E-mail: admin@admin - Senha: 123456
