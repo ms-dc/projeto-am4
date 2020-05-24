@@ -11,7 +11,7 @@
     <li>Executar o comando <em>php artisan key:generate</em> para gerar uma chave criptografada no arquivo .env<em>.</em></li>
     <li>Copiar e/ou executar o arquivo bd.sql localizado na ra&iacute;z do projeto em um sistema gerenciador de banco de dados que possua suporte &agrave; MYSQL (recomendo o DBeaver pois possue n&atilde;o s&oacute; suporte a MYSQL como varios outros).</li>
     <li>Executar o comando <em>php artisan migrate</em> para migrar a base de dados.</li>
-    <li>Executar o comando <em>php artisan db:seed</em> para popular as tabelas do banco de dados (login e notícias).</li>
+    <li>Executar o comando <em>php artisan db:seed</em> para popular as tabelas do banco de dados (as notícias criadas automaticamente não conterão imagens, basta editá-las e carregar uma nova imagem caso deseje ou então criar uma nova notícia).</li>
 </ol>
 <p> Após o processo de instalação ja é possível acessar o site (url padrão é projeto-am4.test, mas caso dê erro, mude APP_URL no arquivo .env para localhost ou o host configurado em seu ambiente de desenvolvimento)
-<p> Login -> E-mail: admin@admin - Senha: 123456 </p>
+<p> Login -> E-mail: admin@admin - Senha: 123456 (deixei em aberto a possibilidade de se cadastrar).</p>
