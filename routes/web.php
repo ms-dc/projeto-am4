@@ -21,6 +21,6 @@ Route::any('news/search', 'NewsController@search')->name('news.search')->middlew
 
 Route::resource('news', 'NewsController')->middleware('auth');
 
-Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
