@@ -1,6 +1,6 @@
-<p><strong><span style="font-size: 24px;">&nbsp;Projeto AM4</span></strong></p>
+<p><strong><span style="font-size: 26px;">&nbsp;Projeto AM4</span></strong></p>
 <p><br></p>
-<p><span style="font-size: 20px;">&nbsp;Como instalar o projeto Laravel</span></p>
+<p><span style="font-size: 24px;">&nbsp;Como instalar o projeto Laravel</span></p>
 <p><br></p>
 <p><a href="https://laravel.com/docs/7.x">Pr&eacute; Requisitos</a> (ou um ambiente de desenvolvimento, recomendo o <a href="https://laragon.org/download/">Laragon</a>).</p>
 <p>Instru&ccedil;&otilde;es:</p>
