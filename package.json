@@ -22,6 +22,10 @@
         "sass-loader": "^8.0.0",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10",
-        "websocket-extensions": ">=0.1.4"
+        "websocket-extensions": "^0.1.4"
+    },
+    "dependencies": {
+        "fibers": "^5.0.0",
+        "node-sass": "^4.14.1"
     }
 }
