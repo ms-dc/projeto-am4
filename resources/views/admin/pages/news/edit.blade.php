@@ -1,10 +1,10 @@
 @extends('admin.layouts.app')
 
-@section('title', "Editar Produto {$news->name}")
+@section('title', "Editar Produto {$news->title}")
 
 @section('content')
     <br>
-    <h1>Editar Produto {{$news->name}}</h1>
+    <h1>Editar Notícia - {{$news->title}}</h1>
 
     <form action="{{ route('news.update', $news->id) }}" method="post" enctype="multipart/form-data">
         @method('PUT')
